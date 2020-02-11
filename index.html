@@ -5,5 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script
+      src="https://browser.sentry-cdn.com/5.12.1/bundle.min.js"
+      integrity="sha384-y+an4eARFKvjzOivf/Z7JtMJhaN6b+lLQ5oFbBbUwZNNVir39cYtkjW1r6Xjbxg3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Sentry.init({
+        dsn: "https://9c8e5d6e898348608e2b146d316ea684@sentry.io/2433616"
+      });
+
+      myUndefinedFunction();
+
+      //   typeError
+      //   let typeError = {
+      //     value: "works"
+      //   };
+
+      //   typeError.forEach(e => {
+      //     console.log(e);
+      //   });
+
+      //   syntax error
+      // let syntaxError = 1.toUpperCase()
+    </script>
+  </body>
 </html>
