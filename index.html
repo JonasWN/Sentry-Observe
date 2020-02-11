@@ -12,23 +12,23 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      Sentry.init({
-        dsn: "https://9c8e5d6e898348608e2b146d316ea684@sentry.io/2433616"
-      });
+        Sentry.init({
+          dsn: "https://9c8e5d6e898348608e2b146d316ea684@sentry.io/2433616"
+        });
 
-      //   myUndefinedFunction();
+        //   myUndefinedFunction();
 
-      //   typeError
-      let typeError = {
-        value: "works"
-      };
+        //   typeError
+      //   let typeError = {
+      //     value: "works"
+      //   };
 
-      typeError.forEach(e => {
-        console.log(e);
-      });
+      //   typeError.forEach(e => {
+      //     console.log(e);
+      //   });
 
-      //   syntax error
-      // let syntaxError = 1.toUpperCase()
+        //   syntax error
+        let syntaxError = 1.toUpperCase()
     </script>
   </body>
 </html>
